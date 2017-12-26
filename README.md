@@ -11,13 +11,13 @@ Project Drfts (temporary naming), a safe community media platform for us, ours, 
 
 ## Install (based on ubuntu)
  - docker https://docs.docker.com/engine/installation/linux/docker-ce
-  - `$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
-  - `$ sudo apt-key fingerprint 0EBFCD88`
-  - `$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`
-  - `$ sudo apt update -y && sudo apt install -y docker-ce`
+   - `$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+   - `$ sudo apt-key fingerprint 0EBFCD88`
+   - `$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`
+   - `$ sudo apt update -y && sudo apt install -y docker-ce`
  - PHP 7 & Composer
-  - `$ sudo apt install php7`
-  - `$ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer`
+   - `$ sudo apt install php7`
+   - `$ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer`
  - Project install & Update
-  - `$ composer install`
-  - `$ composer update`
+   - `$ composer install`
+   - `$ composer update`
