@@ -18,6 +18,16 @@ Project Drfts (temporary naming), a safe community media platform for us, ours, 
  - PHP 7 & Composer
    - `$ sudo apt install php7`
    - `$ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer`
- - Project install & Update
+
+## Project Initialization
+ - Git clone to local repository
+   - `$ git clone https://github.com/insaint03/drfts.git`
+   - Following commands must be executed in the `drfts` directory
+ - Project install & update
    - `$ composer install`
    - `$ composer update`
+ - Run docker container & test
+   - `$ sudo docker-compose up -d`
+   - Visit http://localhost:8080 on your browser
+
+ 
