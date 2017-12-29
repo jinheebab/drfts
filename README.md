@@ -36,8 +36,7 @@ Project Drfts (temporary naming), a safe community media platform for us, ours, 
  - Composer (from https://www.abeautifulsite.net/installing-composer-on-os-x)
    - `$ curl -sS https://getcomposer.org/installer | php`
    - `$ sudo mv composer.phar /usr/local/bin/`
-   - `$ vi ~/.bash_profile` 
-   - Add following line; `alias composer="php /usr/local/bin/composer.phar"`
+   - Open ~/.bash_profile and add following line; `alias composer="php /usr/local/bin/composer.phar"`
 
 ## Project Initialization
  - Git clone to local repository
