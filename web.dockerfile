@@ -10,16 +10,16 @@ RUN apk update && \
 	curl -sS https://getcomposer.org/install | php -- --install-dir=/usr/loca/bin --filname=composer && \
 	chmod +x /usr/local/bin/composer
 
-COPY ./* /var/www/
-
 WORKDIR /var/www
 
-# TODO: run redis daemon
-RUN redis-server
+RUN git clone https://github.com/insaint03/drfts.git
+
+# Run redis server
+RUN redis-server --daemonize yes
 
 # TODO: run nginx daemon on test completed
-RUN composer install && 
-	composer update &&
-	composer test &&
-	nginx -d
+RUN composer install && \
+	composer update && \
+	composer test
 
+# RUN nginx
