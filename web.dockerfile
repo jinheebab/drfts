@@ -14,12 +14,12 @@ COPY ./* /var/www/
 
 WORKDIR /var/www
 
-RUN composer install
+# TODO: run redis daemon
+RUN redis-server
 
-# TODO: RUN nginx
-RUN nginx -d ${NGINX_CONF}
-
-# TODO: redis connection
-
-# TODO: sqlite volume
+# TODO: run nginx daemon on test completed
+RUN composer install && 
+	composer update &&
+	composer test &&
+	nginx -d
 
